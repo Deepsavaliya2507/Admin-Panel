@@ -9,7 +9,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- :root {
+:root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -50,9 +50,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  webkit-text-size-adjust: 100%;
-  ms-text-size-adjust: 100%;
-  moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 article,
@@ -211,7 +209,7 @@ caption {
 }
 th {
   text-align: inherit;
-  text-align: webkit-match-parent;
+  text-align: -webkit-match-parent;
 }
 label {
   display: inline-block;
@@ -1925,8 +1923,6 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   box-shadow: inset 0 0 0 transparent;
@@ -3098,8 +3094,6 @@ input[type="submit"].btn-block {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box !important;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
@@ -4555,8 +4549,6 @@ input[type="submit"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  -webkit-background-clip: border-box;
-  -moz-background-clip: border-box;
   border: 0 solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
@@ -5560,8 +5552,6 @@ a.disabled.mailbox-attachment-close {
   font-size: 0.875rem;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -5589,8 +5579,6 @@ a.disabled.mailbox-attachment-close {
   color: #6c757d;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
@@ -5697,8 +5685,6 @@ a.disabled.mailbox-attachment-close {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -5943,8 +5929,6 @@ a.disabled.mailbox-attachment-close {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -6233,8 +6217,6 @@ a.disabled.mailbox-attachment-close {
   cursor: pointer;
   background-color: #fff;
   background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   opacity: 0.5;
@@ -13804,8 +13786,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 .layout-fixed .main-sidebar-custom {
   height: -webkit-fill-available;
   height: -moz-available;
-  height: ms-stretch;
-  height: 100%;
+  height: -ms-stretch;
+  height: stretch;
 }
 .layout-fixed .main-sidebar-custom .sidebar {
   height: calc(100% - ((3.5rem + 4rem) + 1px));
